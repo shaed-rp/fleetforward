@@ -7,19 +7,18 @@ interface StatsGridProps {
 
 const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16">
       {stats.map((stat, index) => (
         <div 
           key={index} 
-          className="group relative p-6 rounded-2xl bg-gradient-to-br from-gray-900/80 to-gray-800/80 dark:from-gray-900/80 dark:to-gray-800/80 light:from-white/80 light:to-gray-50/80 backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 light:border-gray-200/50 hover:border-primary/50 transition-all duration-300 hover-lift animate-fade-in"
-          style={{ animationDelay: `${index * 0.1}s` }}
+          className="group relative p-8 rounded-3xl apple-card dark:apple-card-dark hover:border-apple-blue/50 transition-apple hover-lift animate-fade-in"
+          style={{ animationDelay: `${index * 0.15}s` }}
         >
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <div className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <div className="text-5xl font-bold bg-gradient-to-r from-apple-blue to-apple-green bg-clip-text text-transparent font-apple">
               {stat.value}
             </div>
-            <div className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600 mt-2 font-medium">{stat.label}</div>
+            <div className="text-base text-apple-gray-6 dark:text-apple-gray-5 mt-3 font-medium font-apple">{stat.label}</div>
           </div>
         </div>
       ))}

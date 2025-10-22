@@ -4,26 +4,26 @@ import StatsGrid from './StatsGrid';
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="hero" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 light:from-gray-50 light:via-white light:to-gray-100"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-secondary/10"></div>
+    <section id="hero" className="relative py-24 md:py-40 overflow-hidden">
+      {/* Apple-style background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-apple-gray-1 via-white to-apple-gray-2 dark:from-apple-gray-11 dark:via-apple-gray-10 dark:to-apple-gray-9"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-apple-blue/5 via-transparent to-apple-green/5"></div>
       
-      <div className="relative container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-secondary/20 to-primary/20 border border-secondary/30 rounded-full text-sm font-medium backdrop-blur-sm">
-            <span className="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
-            Fleet Forward Conference 2025 • October 21-23
+      <div className="relative container mx-auto px-6">
+        <div className="max-w-5xl mx-auto text-center space-y-12">
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/60 dark:bg-apple-gray-10/60 backdrop-blur-xl border border-apple-gray-3/50 dark:border-apple-gray-8/50 rounded-full text-sm font-medium shadow-lg">
+            <span className="w-3 h-3 bg-apple-green rounded-full animate-pulse"></span>
+            <span className="text-apple-gray-11 dark:text-apple-gray-1">Fleet Forward Conference 2025 • October 21-23</span>
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-white via-gray-100 to-gray-300 dark:from-white dark:via-gray-100 dark:to-gray-300 light:from-gray-900 light:via-gray-800 light:to-gray-700 bg-clip-text text-transparent">
+          <h2 className="text-6xl md:text-8xl font-bold leading-tight text-apple-gray-11 dark:text-apple-gray-1 font-apple">
             The Rise of{' '}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-apple-blue to-apple-green bg-clip-text text-transparent">
               Chinese Automakers
             </span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-300 light:text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-2xl md:text-3xl text-apple-gray-7 dark:text-apple-gray-4 max-w-4xl mx-auto leading-relaxed font-apple">
             An insider's perspective on how Chinese EV manufacturers are reshaping 
             the global fleet industry—and what North American fleet managers need to know.
           </p>

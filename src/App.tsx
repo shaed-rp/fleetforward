@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gray-950 dark:bg-gray-950 light:bg-gray-50 text-white dark:text-white light:text-gray-900">
+      <div className="min-h-screen bg-apple-gray-1 dark:bg-apple-gray-11 text-apple-gray-11 dark:text-apple-gray-1 font-apple">
         <Header />
         <HeroSection />
         <PanelInfo />
