@@ -221,6 +221,44 @@ body {
   .premium-button:active {
     transform: translateY(0);
   }
+  
+  /* Hero Section Enhancements */
+  .hero-gradient {
+    background: linear-gradient(-45deg, #0F172A, #1e293b, #334155, #475569);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  .hero-gradient-light {
+    background: linear-gradient(-45deg, #F8FAFC, #F1F5F9, #E2E8F0, #CBD5E1);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .floating-element-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid var(--accent-blue);
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  .parallax-slow {
+    transform: translateY(var(--parallax-offset, 0));
+    transition: transform 0.1s ease-out;
+  }
+  
+  .stat-counter {
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 @keyframes fadeIn {
@@ -278,6 +316,36 @@ body {
   }
   50% { 
     transform: translateY(-4px); 
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-blue);
   }
 }
 
