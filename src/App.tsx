@@ -1,3 +1,4 @@
+import { ThemeProvider } from './contexts/ThemeContext';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import PanelInfo from './components/PanelInfo';
@@ -8,15 +9,17 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
-      <Header />
-      <HeroSection />
-      <PanelInfo />
-      <TopicsSection />
-      <TakeawaysSection />
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-gray-950 dark:bg-gray-950 light:bg-gray-50 text-white dark:text-white light:text-gray-900">
+        <Header />
+        <HeroSection />
+        <PanelInfo />
+        <TopicsSection />
+        <TakeawaysSection />
+        <Footer />
+        <ScrollToTop />
+      </div>
+    </ThemeProvider>
   );
 }
 
