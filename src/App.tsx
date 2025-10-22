@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-apple-gray-1 dark:bg-apple-gray-11 text-apple-gray-11 dark:text-apple-gray-1 font-apple">
+      <div className="min-h-screen bg-gray-50 dark:bg-primary-navy text-primary-navy dark:text-gray-50 font-inter">
         <Header />
         <HeroSection />
         <PanelInfo />
@@ -18,7 +18,7 @@ function App() {
         <TakeawaysSection />
         <Footer />
         <ScrollToTop />
-      </div>
+              </div>
     </ThemeProvider>
   );
 }
